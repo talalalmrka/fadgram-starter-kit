@@ -1,10 +1,10 @@
-# Laravel Project
+# Fadgram starter kit
 
 This is a Laravel project starter kit.
 
 ## Requirements
 
--   PHP >= 8.0o
+-   PHP >= 8.0
 -   Composer
 -   Node.js & npm
 
@@ -17,35 +17,27 @@ This is a Laravel project starter kit.
     cd fadgram-starter-kit
     ```
 
-2. Install PHP dependencies:
+2. Create database:
+
+    ```sh
+    touch database/database.sqlite
+    ```
+
+3. Install PHP dependencies:
 
     ```sh
     composer install
     ```
 
-3. Install Node.js dependencies:
+4. Install Node.js dependencies:
 
     ```sh
     npm install
     ```
 
-4. Copy the `.env.example` file to `.env`:
-
+5. Run the database migrations:
     ```sh
-    cp .env.example .env
-    ```
-
-5. Generate an application key:
-
-    ```sh
-    php artisan key:generate
-    ```
-
-6. Set up your database configuration in the `.env` file.
-
-7. Run the database migrations:
-    ```sh
-    php artisan migrate
+    php artisan migrate:fresh --seed
     ```
 
 ## Usage
@@ -53,7 +45,7 @@ This is a Laravel project starter kit.
 -   Start the local development server:
 
     ```sh
-    php artisan serve
+    composer run dev
     ```
 
 -   Compile the assets:
