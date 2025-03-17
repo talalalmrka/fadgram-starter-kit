@@ -20,6 +20,6 @@
         "lightningcss-linux-x64-gnu": "^1.29.1"
     },
     "devDependencies": {
-        "fadgram-ui": "^0.2.3"
+        "fadgram-ui": "^0.2.7"
     }
 }
